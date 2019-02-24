@@ -6,14 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".registration"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="#149C97">
+    android:gravity="center">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NRC Registration"
-        android:textColor="#fff"
+        android:textSize="25sp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"/>
 
@@ -138,7 +137,7 @@
         android:background="@drawable/btn2"
         android:text="Browse"
         android:layout_marginLeft="20dp"
-        android:id="@+id/file"/>
+        android:id="@+id/file_nrc"/>
 
 
 </LinearLayout>
@@ -148,7 +147,8 @@
         android:text="Submit"
         android:gravity="center"
         android:layout_marginTop="20dp"
-        android:background="@drawable/btnround"/>
+        android:background="@drawable/btnround"
+        android:id="@+id/submit_nrc"/>
 
 
 
