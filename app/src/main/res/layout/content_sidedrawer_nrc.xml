@@ -6,8 +6,50 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".sidedrawer_nrc"
-    tools:showIn="@layout/app_bar_sidedrawer_nrc">
+    tools:showIn="@layout/app_bar_sidedrawer_nrc"
+    android:orientation="vertical"
+    android:background="@drawable/gradient2">
 
-    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NRC NAME"
+        android:textSize="25sp"
+        android:paddingLeft="20dp"
+        android:textColor="#000"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="       Manage Bed Count"
+        android:textAlignment="viewStart"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/bed"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/round"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="       Manage Bed Availability"
+        android:textAlignment="viewStart"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/bed"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/round"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="       Account Settings"
+        android:textAlignment="viewStart"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/controls"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/round"/>
+
+
+
+
 
 </LinearLayout>

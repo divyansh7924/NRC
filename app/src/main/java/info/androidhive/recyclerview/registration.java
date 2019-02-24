@@ -7,8 +7,10 @@ import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -28,6 +30,7 @@ public class registration extends AppCompatActivity {
     private StorageReference mStorageRef;
     private static final int PICK_PDF_REQUEST = 234;
     private Uri filepath;
+    private EditText email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,7 @@ public class registration extends AppCompatActivity {
         mStorageRef = FirebaseStorage.getInstance().getReference();
         btn = (Button)findViewById(R.id.file_nrc);
         btn2 = (Button)findViewById(R.id.submit_nrc);
+        email = (EditText) findViewById(R.id.et_mail);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +75,7 @@ public class registration extends AppCompatActivity {
             final ProgressDialog progressdialog = new ProgressDialog(this);
             progressdialog.setTitle("Uploading....");
             progressdialog.show();
-            StorageReference regsRef = mStorageRef.child("regpdfs/");
+            StorageReference regsRef = mStorageRef.child("nrcregpdf/" + email.getText());
 
             regsRef.putFile(filepath)
                     .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -94,7 +98,7 @@ public class registration extends AppCompatActivity {
                 @Override
                 public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
                     double progress = (100.0 * taskSnapshot.getBytesTransferred())/taskSnapshot.getTotalByteCount();
-                    progressdialog.setMessage(((int)progress) + "%uploaded...");
+                    progressdialog.setMessage(((int)progress) + " % uploaded...");
                 }
             });
         }

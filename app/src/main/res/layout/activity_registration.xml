@@ -16,8 +16,7 @@
         android:text="NRC Registration"
         android:textSize="25sp"
         android:layout_marginTop="15dp"
-        android:textColorHint="#B19999"
-        android:backgroundTint="#000"/>
+        android:layout_marginBottom="15dp" />
 
     <EditText
         android:layout_marginLeft="20dp"
@@ -26,7 +25,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/et_mail"
         android:hint="Email ID"
-        android:textColorHint="#B19999"
+        android:textColorHint="#FFEEEE"
         android:backgroundTint="#000"/>
 
     <EditText
@@ -36,7 +35,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/et_pwd"
         android:hint="Password"
-        android:textColorHint="#B19999"
+        android:inputType="textPassword"
+        android:textColorHint="#B4A1A1"
         android:backgroundTint="#000"/>
 
     <EditText
@@ -46,9 +46,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/et_bed"
         android:hint="No. of Beds"
-        android:inputType="number"
-        android:textColorHint="#B19999"
-        android:backgroundTint="#000"/>
+        android:inputType="number"/>
 
     <EditText
         android:layout_marginLeft="20dp"
@@ -56,9 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/et_name"
-        android:hint="Center name"
-        android:textColorHint="#B19999"
-        android:backgroundTint="#000"/>
+        android:hint="Center name" />
 
     <EditText
         android:layout_marginLeft="20dp"
@@ -66,9 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/et_add1"
-        android:hint="address"
-        android:textColorHint="#B19999"
-        android:backgroundTint="#000"/>
+        android:hint="address"/>
 
     <EditText
         android:layout_marginLeft="20dp"
@@ -76,9 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/et_city"
-        android:hint="City"
-        android:textColorHint="#B19999"
-        android:backgroundTint="#000"/>
+        android:hint="City"/>
 
 
     <EditText
@@ -88,9 +80,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/et_pin"
         android:hint="Pincode"
-        android:inputType="number"
-        android:textColorHint="#B19999"
-        android:backgroundTint="#000"/>
+        android:inputType="number"/>
 
     <EditText
         android:layout_marginLeft="20dp"
@@ -98,9 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/et_state"
-        android:hint="State"
-        android:textColorHint="#B19999"
-        android:backgroundTint="#000"/>
+        android:hint="State"/>
 
 
     <EditText
@@ -110,9 +98,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/et_phone"
         android:hint="Phone"
-        android:inputType="number"
-        android:textColorHint="#B19999"
-        android:backgroundTint="#000"/>
+        android:inputType="number"/>
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -121,9 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Upload Registration File"
-        android:layout_marginLeft="20dp"
-        android:textColorHint="#B19999"
-        android:backgroundTint="#000"/>
+        android:layout_marginLeft="20dp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -131,7 +115,7 @@
         android:background="@drawable/browse"
         android:text="Browse"
         android:layout_marginLeft="120dp"
-        android:id="@+id/file_nrc" />
+        android:id="@+id/file_nrc"/>
 
 
 </LinearLayout>
