@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_createprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn"
+        android:drawableRight="@drawable/ic_baseline_face_24px"
+        android:paddingRight="10dp"
+        android:text="Create New Profile"
+        android:textColor="#fff"
+        android:textAlignment="textStart"
+        android:paddingLeft="30dp"
+        android:textSize="25sp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_listnrc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn2"
+        android:drawableRight="@drawable/ic_baseline_local_hospital_24px"
+        android:paddingRight="10dp"
+        android:text="List of NRC's"
+        android:textColor="#fff"
+        android:textAlignment="textStart"
+        android:paddingLeft="30dp"
+        android:textSize="25sp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_pastreferral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/btnround"
+        android:drawableRight="@drawable/ic_baseline_history_24px"
+        android:paddingRight="10dp"
+        android:text="Past Referrals"
+        android:textColor="#fff"
+        android:textAlignment="textStart"
+        android:paddingLeft="30dp"
+        android:textSize="25sp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
