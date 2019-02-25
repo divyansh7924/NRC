@@ -1,5 +1,6 @@
 package info.androidhive.recyclerview;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view, int position) {
                 Center center = centerList.get(position);
                 Toast.makeText(getApplicationContext(), center.getTitle() + " is selected!", Toast.LENGTH_SHORT).show();
+                nrcinfodisp();
             }
 
             @Override
@@ -107,6 +109,11 @@ public class MainActivity extends AppCompatActivity {
         // notify adapter about data set changes
         // so that it will render the list with new data
         mAdapter.notifyDataSetChanged();
+    }
+
+    public void nrcinfodisp(){
+        Intent intent = new Intent(this, nrc_info.class);
+        startActivity(intent);
     }
 
 }

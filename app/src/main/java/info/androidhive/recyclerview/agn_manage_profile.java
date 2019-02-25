@@ -22,8 +22,8 @@ public class agn_manage_profile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_agn_manage_profile);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.manageprofile_toolbar);
         setSupportActionBar(toolbar);
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);

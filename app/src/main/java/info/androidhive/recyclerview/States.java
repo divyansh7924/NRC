@@ -1,5 +1,6 @@
 package info.androidhive.recyclerview;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -21,8 +22,8 @@ public class States extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_states);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.states_toolbar);
         setSupportActionBar(toolbar);
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -56,6 +57,7 @@ public class States extends AppCompatActivity {
             public void onClick(View view, int position) {
                 Center center = centerList.get(position);
                 Toast.makeText(getApplicationContext(), center.getTitle() + " is selected!", Toast.LENGTH_SHORT).show();
+                centerdisp();
             }
 
             @Override
@@ -78,6 +80,11 @@ public class States extends AppCompatActivity {
         // notify adapter about data set changes
         // so that it will render the list with new data
         mAdapter.notifyDataSetChanged();
+    }
+
+    public void centerdisp(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
 }
