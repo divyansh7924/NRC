@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".child_profile"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF3F51B5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Profile"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/delete"
+                android:background="#FF3F51B5"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baby"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF3F51B5"
+        android:text="Vijaya Kumari"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:paddingLeft="15dp"
+        android:paddingVertical="2dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="10dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Child Name"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ram"
+                    android:layout_marginLeft="77dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age in Months"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:layout_marginLeft="47dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B+"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asha Tape"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.5"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Z Score"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malnourished"
+                    android:layout_marginLeft="109dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parent Aadhaar"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5643 3568 1236"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8792192394"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="177, hudson street, Dwarka, 110058"
+                    android:layout_marginLeft="107dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Symptoms"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dehydration"
+                        android:layout_marginLeft="82dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="22sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dengue"
+                        android:layout_marginLeft="82dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
