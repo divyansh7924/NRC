@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient1">
 
     <Button
         android:id="@+id/btn_createprofile"
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
-        android:background="@drawable/btn"
+        android:background="@drawable/btnround"
         android:drawableRight="@drawable/ic_baseline_face_24px"
         android:paddingRight="10dp"
         android:text="Create New Profile"
@@ -45,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
-        android:background="@drawable/btn3"
+        android:background="@drawable/btnround"
         android:drawableRight="@drawable/baby"
         android:paddingRight="10dp"
         android:text="Manage Profiles"
@@ -61,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
-        android:background="@drawable/btnround"
+        android:background="@drawable/btn2"
         android:drawableRight="@drawable/ic_baseline_history_24px"
         android:paddingRight="10dp"
         android:text="Past Referrals"
