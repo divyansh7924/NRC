@@ -10,6 +10,7 @@ public class agnpanel extends AppCompatActivity {
 
     private Button btn;
     private Button btn2;
+    private Button btn1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,7 @@ public class agnpanel extends AppCompatActivity {
         setContentView(R.layout.activity_agnpanel);
         btn = (Button)findViewById(R.id.btn_listnrc);
         btn2 = (Button) findViewById(R.id.btn_manageprofiles);
+        btn1 = (Button) findViewById(R.id.btn_createprofile);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +30,12 @@ public class agnpanel extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 manageprofiles();
+            }
+        });
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                createchildprofile();
             }
         });
     }
@@ -42,4 +50,10 @@ public class agnpanel extends AppCompatActivity {
         Intent intent = new Intent(this, agn_manage_profile.class);
         startActivity(intent);
     }
+
+    public void createchildprofile() {
+        Intent intent = new Intent(this, create_refrral.class);
+        startActivity(intent);
+    }
 }
+

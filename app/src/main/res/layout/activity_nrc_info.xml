@@ -5,31 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".nrc_info"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/gradient1">
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#FF3F51B5">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NRC Center"
-            android:textSize="20sp"
-            android:textColor="#fff"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/nrc_name"/>
 
-    </android.support.v7.widget.Toolbar>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
+        android:layout_marginTop="50dp"
         android:text="Nutrition Rehabilitation Center"
         android:textSize="20sp"
-        android:layout_marginTop="20dp"
         android:textColor="#000"
         android:layout_marginLeft="10dp"
         android:id="@+id/nrc_title"/>
@@ -57,8 +46,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="15dp"
-        android:background="@drawable/container"
         android:paddingVertical="20dp"
         android:id="@+id/bedavailablecnt"
         android:layout_marginHorizontal="17dp">
@@ -144,9 +131,75 @@
                 android:id="@+id/bedprogress"
                 />
         </LinearLayout>
-
-        
-
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View on maps >"
+        android:textColor="#6e57ee"
+        android:background="@drawable/round"
+        android:id="@+id/viewonmap"
+        android:layout_marginLeft="39dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Referrals"
+        android:textColor="#000"
+        android:background="@drawable/round"
+        android:id="@+id/viewonmap"
+        android:layout_marginLeft="39dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="0dp"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scrolldown"
+        android:layout_marginLeft="192dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.CoordinatorLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:context=".agn_manage_profile">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/sendreferral_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <include layout="@layout/content_main"/>
+
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scrollup"
+        android:layout_marginLeft="192dp"
+        />
+
+
+
+
 
 </LinearLayout>

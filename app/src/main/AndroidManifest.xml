@@ -11,7 +11,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".nrc_info"></activity>
+        <activity android:name=".create_refrral"></activity>
+        <activity android:name=".nrc_info" />
         <activity android:name=".child_profile" />
         <activity android:name=".agn_manage_profile" />
         <activity android:name=".settingsnrc" />
